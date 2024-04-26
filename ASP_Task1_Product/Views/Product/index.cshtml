@@ -1,0 +1,19 @@
+@model List<Product>;
+<link rel="stylesheet" href="~/css/index.css"/>
+
+<div class="container">
+    @foreach(Product product in @Model)
+    {
+        <div class="product">
+            <div class="img-div">
+                <img src="@Url.Content("~" + @product.product_img)" alt="product"/>
+            </div>
+            <div>
+                <p>Name: @product.product_name</p>
+            </div>
+            <div>
+                <p>Cost: @product.product_cost</p>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,14 @@
+@model Product
+<link rel="stylesheet" href="~/css/index.css"/>
+
+<div class="product">
+    <div class="img-div">
+        <img src="@Url.Content("~" + @Model.product_img)" alt="product"/>
+    </div>
+    <div>
+        <p>Name: @Model.product_name</p>
+    </div>
+    <div>
+        <p>Cost: @Model.product_cost</p>
+    </div>
+</div>

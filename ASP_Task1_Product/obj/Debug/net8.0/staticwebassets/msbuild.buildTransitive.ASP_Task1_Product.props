@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/ASP_Task1_Product.props" />
+</Project>
